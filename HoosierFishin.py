@@ -5,7 +5,7 @@ import os
 from PIL import Image
 
 root = Tk()
-root.geometry("500x750")
+root.geometry("550x800")
 root.configure(bg = "sky blue")
 root.title("Welcome to Hoosier Fishin'!")
 
@@ -23,8 +23,11 @@ def myClick():
   myLabel = Label(root, text = """
                    This application shows some
                   of the best fishing areas in
-                  Indiana and any nearby states.
-                  Click "Restart" to reset the program.""", bg = "sky blue")
+                  Indiana and its bordering states.
+                  It also lists some of the most popular
+                  fish to catch for each location.
+                  
+                  When you are finished reading, click "Restart" to clear the text.""", bg = "sky blue")
   myLabel.pack()
 
 myButton = Button(root, text = "About this app", command = myClick, fg = "black", bg = "white")
@@ -32,13 +35,17 @@ myButton.pack()
 
 def myClick():
   myLabel = Label(root, text = """
-                  A few of the best fishing
-                  spots in Indiana are
-                  Patoka Lake,
-                  White River,
-                  St. Joseph River,
-                  Morse Reservoir, and
-                  Sundance Lake. """, bg = "sky blue")
+                  Best fishing spots in Indiana:
+                  
+                  Patoka Lake (Largemouth Bass, Channel Catfish, Flathead Catfish)
+                  
+                  White River (Bluegill, Largemouth Bass, Flathead Catfish)
+                  
+                  St. Joseph River (Smallmouth and Largemouth Bass, Walleye)
+                  
+                  Morse Reservoir (Largemouth Bass, Channel Catfish, Striped Bass)
+                  
+                  Sundance Lake (Bluegill, Redear, Channel Catfish) """, bg = "sky blue")
   myLabel.pack()
 
 myButton = Button(root, text = "Indiana", command = myClick, fg = "black", bg = "white")
@@ -46,14 +53,17 @@ myButton.pack()
 
 def myClick():
   myLabel = Label(root, text = """
-                  A few of the best fishing
-                  spots in Illinois are
-                  the Mississippi River,
-                  Lake Michigan,
-                  Heidecke Lake,
-                  Lake Springfield, and
-                  Evergreen lake.
-                  """, bg = "sky blue")
+                  Best fishing spots in Illinois:
+                  
+                  Mississippi River (Crappie, Walleye, Sauger)
+                  
+                  Lake Michigan (Lake Trout, Rainbow Trout, Brown Trout)
+                  
+                  Heidecke Lake (Muskellunge, Smallmouth Bass, Walleye)
+                  
+                  Lake Springfield (Channel Catfish, Largemouth Bass, Freshwater Drum)
+                  
+                  Evergreen Lake (Largemouth Bass, Muskellunge, Saugeye)""", bg = "sky blue")
   myLabel.pack()
 
 myButton = Button(root, text = "Illinois", command = myClick,     fg = "black", bg = "white")
@@ -61,13 +71,17 @@ myButton.pack()
 
 def myClick():
   myLabel = Label(root, text = """
-                  A few of the best fishing
-                  spots in Michigan are
-                  Manistee River,
-                  Grand River,
-                  Saginaw Bay,
-                  Lake Erie, and of course,
-                  Lake Michigan. """, bg = "sky blue")
+                  Best fishing spots in Michigan:
+                  
+                  Manistee River (Steelhead, Salmon, Trout)
+                  
+                  Grand River (Steelhead, Smallmouth Bass, Northern Pike)
+                  
+                  Saginaw Bay (Best for Walleye)
+                  
+                  Lake Erie (Sheepshead, Rock Bass, Pink Salmon)
+                  
+                  Lake Michigan (Coho Salmon, Pink Salmon, Lake Whitefish) """, bg = "sky blue")
   myLabel.pack()
 
 myButton = Button(root, text = "Michigan", command = myClick,     fg = "black", bg = "white")
@@ -75,13 +89,17 @@ myButton.pack()
 
 def myClick():
   myLabel = Label(root, text = """
-                  A few of the best fishing
-                  spots in Ohio are
-                  Lake Erie,
-                  Ohio River,
-                  Seneca Lake,
-                  Hoover Reservoir, and
-                  Alum Creek. """, bg = "sky blue")
+                  Best fishing spots in Ohio:
+                  
+                  Lake Erie (Steelhead, Walleye, Yellow Perch)
+                  
+                  Ohio River (Largemouth Bass, Smallmouth Bass, Sauger)
+                  
+                  Seneca Lake (Bluegill, Bullhead Catfish, Channel Catfish)
+                  
+                  Hoover Reservoir (Blue Catfish, Walleye, Saugeye)
+                  
+                  Alum Creek (Largemouth Bass, Smallmouth Bass, Channel Catfish) """, bg = "sky blue")
   myLabel.pack()
 
 myButton = Button(root, text = "Ohio", command = myClick,     fg = "black", bg = "white")
@@ -89,13 +107,17 @@ myButton.pack()
 
 def myClick():
   myLabel = Label(root, text = """
-                  A few of the best fishing
-                  spots in Kentucky are
-                  Taylorsville Lake,
-                  Lake Cumberland,
-                  Nolin River Lake,
-                  Ohio River, and
-                  Rough River Lake. """, bg = "sky blue")
+                  Best fishing spots in Kentucky:
+                  
+                  Taylorsville Lake (Crappie, White Bass, Hybrid Stripers)
+                  
+                  Lake Cumberland (Crappie, Walleye, Bream)
+                  
+                  Nolin River Lake (Largemouth Bass, Crappie, Walleye)
+                  
+                  Ohio River (Largemouth Bass, Sauger, Walleye)
+                  
+                  Rough River Lake (Black Bass, Hybrid Striped Bass, Gizzard Shad) """, bg = "sky blue")
   myLabel.pack()
 
 myButton = Button(root, text = "Kentucky", command = myClick,     fg = "black", bg = "white")
